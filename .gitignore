@@ -1,0 +1,5 @@
+node_modules/
+private.key
+client/dist/
+.claude/
+*.log

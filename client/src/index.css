@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f4f5f7;
+    color: #1f2933;
+}
+
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.form {
+    display: grid;
+    gap: 8px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    margin-bottom: 24px;
+}
+
+.form h2 {
+    margin: 0 0 4px;
+    font-size: 1.1rem;
+}
+
+.form input {
+    padding: 8px;
+    border: 1px solid #cbd2d9;
+    border-radius: 6px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #3b82f6;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.secondary {
+    background: #9aa5b1;
+}
+
+button.danger {
+    background: #ef4444;
+}
+
+button:hover {
+    filter: brightness(0.95);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.placeholder {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    background: #e2e8f0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    color: #9aa5b1;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: #52606d;
+}
+
+.chip {
+    background: #e0f2fe;
+    color: #0369a1;
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 0.85rem;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.card .actions {
+    justify-content: center;
+}
+
+.suggestions {
+    list-style: none;
+    margin: -8px 0 0;
+    padding: 0;
+    border: 1px solid #cbd2d9;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.suggestions button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    color: #1f2933;
+    text-align: left;
+    cursor: pointer;
+}
+
+.suggestions button:hover {
+    background: #e2e8f0;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
